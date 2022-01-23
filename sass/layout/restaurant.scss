@@ -1,0 +1,43 @@
+.restaurant{
+    background-color: #f6f6f6;
+    margin-top: 40px;
+    & h2{
+        margin-left: 17px;
+        margin-top: 24px;
+    }
+    .restaurant__carte{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+    & a{
+        margin-top: -5px;
+        margin-bottom: 0px;
+        }
+        & a:link{
+            text-decoration: none;
+        }
+    & .carte{
+        height: 230px;
+        margin: 17px;
+        margin-bottom: 0px;
+        margin-top: 0px;     
+        }
+    & .carte__image{
+      height: 230px;
+      margin: 0px;
+      background-color: white;
+      border-radius: 20px;
+       }
+      & img{
+          width: 100%;
+          height: 155px;
+          border-radius: 20px 20px 0px 0px;
+         object-fit: cover;
+         object-position: center;
+        }
+        .carte__description h3{
+            margin-left: 10px;
+            color: black;
+        }
+    }

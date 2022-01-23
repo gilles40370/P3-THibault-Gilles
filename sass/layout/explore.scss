@@ -1,0 +1,40 @@
+@use"../mixin/shadow.scss";
+@use"../mixin/hover.scss"; 
+ /* effectuer le 20/01/2022-*/
+
+/* la partie explorer */
+.explore{
+    text-align: center;
+    background-color: #f6f6f6;
+    & h2{
+     font-size: 33px;
+     padding-top: 30px;
+     margin-top: 0px;
+     } 
+     & p{
+     font-size: 21px;
+     color: gray;
+     padding: 0 10px;
+     margin-bottom: 21px;
+     }
+     & button{
+     color: white;
+     width: 250px;
+     height: 60px;
+     font-size: 18px;
+     padding: 14px,28px;
+     margin-bottom: 40px;
+     border: none;
+     margin-top: 14px;
+     border-radius: 28px;
+     background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9),rgba(255, 121, 218, 0.9));
+     cursor: pointer;
+     transition: transform 200ms;
+     @include shadow.base-shadow;
+     }
+     & button:hover{
+    //  transform: scale(1.02);
+     opacity: 0.9;
+     @include hover.hover;
+     }
+ }
