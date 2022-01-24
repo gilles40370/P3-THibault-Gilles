@@ -1,0 +1,24 @@
+footer{
+    background-color: #363636;
+    padding: 0 24px;
+    color: white;
+    margin-bottom: -24px;
+    & h3{
+        font-family: "shrikland",cursive;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: -7px;
+        padding-top: 10px;
+        }
+        & ul {
+            padding-left: 0px;
+        }
+        & a{
+        text-decoration: none;
+        color: white;
+            & li{
+                list-style-type: none;
+                padding-bottom: 10px;
+            }
+    }
+}
