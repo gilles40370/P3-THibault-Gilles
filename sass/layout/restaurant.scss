@@ -1,5 +1,6 @@
 .restaurant{
     background-color: #f6f6f6;
+    margin-bottom: 24px;
     h2{
         margin-bottom: 0px;
         padding: 24px 0px 24px 18px;
@@ -44,13 +45,21 @@
             }
            & figcaption{
                padding-left: 15px;
+               position: relative;
            }
            & h3{
                margin-bottom: 0px;
+               margin: 10px;
            }
            & p{
                margin-top: 5px;
                margin-bottom: 0px;
+           }
+            & i{
+               font-size: 24px;
+               position: absolute;
+               right: 24px;
+               top: 7px;
            }
         
 }
