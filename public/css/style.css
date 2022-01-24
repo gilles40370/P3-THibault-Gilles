@@ -13,6 +13,10 @@ body {
   font-family: " Roboto", sans-serif;
 }
 
+h2 {
+  margin: 0px;
+}
+
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -121,46 +125,57 @@ header {
 
 .restaurant {
   background-color: #f6f6f6;
-  margin-top: 40px;
 }
 .restaurant h2 {
-  margin-left: 17px;
-  margin-top: 24px;
+  margin-bottom: 0px;
+  padding: 24px 0px 24px 18px;
 }
 .restaurant .restaurant__carte {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
+  gap: 24px;
 }
 .restaurant a {
-  margin-top: -5px;
-  margin-bottom: 0px;
-}
-.restaurant a:link {
-  text-decoration: none;
-}
-.restaurant .carte {
-  height: 230px;
-  margin: 17px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-.restaurant .carte__image {
-  height: 230px;
   margin: 0px;
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+.restaurant figure.carte__menu {
+  height: 315px;
   background-color: white;
   border-radius: 20px;
+  margin: 0px 18px 25px 18px;
+}
+.restaurant .neew {
+  position: relative;
+}
+.restaurant .neew::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 24px;
+  width: 70px;
+  background-color: #99E2D0;
+  color: #1b6150;
+  display: grid;
+  place-items: center;
+  right: 24px;
+  top: 24px;
 }
 .restaurant img {
+  height: 230px;
   width: 100%;
-  height: 155px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
-  object-position: center;
 }
-.restaurant .carte__description h3 {
-  margin-left: 10px;
-  color: black;
+.restaurant figcaption {
+  padding-left: 15px;
+}
+.restaurant h3 {
+  margin-bottom: 0px;
+}
+.restaurant p {
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
