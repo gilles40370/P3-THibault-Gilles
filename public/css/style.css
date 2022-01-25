@@ -186,14 +186,14 @@ header {
   top: 50%;
   transform: translateY(-50%);
 }
-.restaurant .fas {
+.restaurant i.fas {
   color: transparent;
-  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-image: linear-gradient(to bottom, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   background-clip: text;
-  -webkit-background-clip: text;
   opacity: 0;
+  transition: all 200ms ease-in-out;
 }
-.restaurant :hover.far {
+.restaurant :hover i.fas {
   opacity: 1;
 }
 
@@ -204,7 +204,7 @@ footer {
   margin-bottom: -24px;
 }
 footer h3 {
-  font-family: "shrikland", cursive;
+  font-family: "shrikhand", cursive;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: -7px;
@@ -225,6 +225,11 @@ footer a li {
 img {
   max-width: 100%;
   width: 100%;
+}
+
+main h2 {
+  font-family: "Shrikhand", sans-serif;
+  padding: 0px 12px;
 }
 
 /*# sourceMappingURL=style.css.map */

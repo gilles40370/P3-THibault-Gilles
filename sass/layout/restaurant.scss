@@ -61,15 +61,15 @@
                top: 50%;
                transform: translateY(-50%);
 }
-                .fas{
-                    color: transparent;
-                    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9),rgba(255, 121, 218, 0.9));
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    opacity: 0;
-                }
-                :hover.far{
-                    opacity: 1;
+            i.fas{
+                color: transparent;
+                background-image: linear-gradient(to bottom, rgba(147, 86, 220, 0.9),rgba(255, 121, 218, 0.9));
+                background-clip: text;
+                opacity: 0;
+                transition: all 200ms ease-in-out ;
+}
+            & :hover i.fas{
+                opacity: 1;
 
                 }
           
