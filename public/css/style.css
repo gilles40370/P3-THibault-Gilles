@@ -191,7 +191,7 @@ header {
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   background-clip: text;
   -webkit-background-clip: text;
-  opacity: 1;
+  opacity: 0;
 }
 .restaurant :hover.far {
   opacity: 1;
