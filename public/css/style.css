@@ -186,14 +186,15 @@ header {
   top: 50%;
   transform: translateY(-50%);
 }
-.restaurant i.fas {
+.restaurant .fas {
   color: transparent;
-  background-image: linear-gradient(to bottom, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   background-clip: text;
+  -webkit-background-clip: text;
   opacity: 0;
-  transition: all 200ms ease-in-out;
+  transition: all ease-in-out;
 }
-.restaurant :hover i.fas {
+.restaurant :hover .fas {
   opacity: 1;
 }
 
@@ -228,8 +229,11 @@ img {
 }
 
 main h2 {
-  font-family: "Shrikhand", sans-serif;
-  padding: 0px 12px;
+  font-family: "shrikhand", "cursive";
+}
+
+.choice {
+  background-color: #f6f6f6;
 }
 
 /*# sourceMappingURL=style.css.map */
