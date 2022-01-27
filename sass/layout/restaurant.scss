@@ -53,23 +53,23 @@
            & p{
                margin-top: 5px;
                margin-bottom: 0px;
-           }
-            & i{
-               font-size: 24px;
-               position: absolute;
-               right: 24px;
-               top: 50%;
-               transform: translateY(-50%);
-                } 
-            .fas{
-                color: transparent;
-                background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9),rgba(255, 121, 218, 0.9));
-                background-clip: text;
-                -webkit-background-clip: text;
-                opacity: 0;
-                transition: all ease-in-out;
+           } 
+           & i{
+            font-size: 24px;
+            position: absolute;
+            right: 24px;
+            top: 50%;
+            transform: translateY(-50%);
+             } 
+         .fas{
+             color: transparent;
+             background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9),rgba(255, 121, 218, 0.9));
+             background-clip: text;
+             -webkit-background-clip: text;
+             opacity: 0;
+             transition: all ease-in-out;
 }
-                & .fas:hover {
-                    opacity: 1;
-                }             
+             & .fas:hover {
+                 opacity: 1;
+             }                      
 }
