@@ -1,0 +1,22 @@
+@use"../mixin/shadow.scss";
+
+button{
+    margin: 40px 20%;
+    }
+    button{
+     width: 250px;
+     height: 60px;
+     border-radius: 30px;
+     border: none;
+     cursor: pointer;
+     font-size: 20px;
+     color: white;
+     background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9),rgba(255, 121, 218, 0.9));
+     transition: transform 200ms;
+     -webkit-transition: transform 200ms;
+     -moz-transition: transform 200ms;
+     -ms-transition: transform 200ms;
+     -o-transition: transform 200ms;
+     @include shadow.base-shadow;
+
+} 

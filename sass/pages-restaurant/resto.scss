@@ -1,3 +1,22 @@
+@use"../mixin/shadow.scss" ;
+@use"../mixin/functions.scss";
+
+header{ 
+    height: 61px;
+    h1{
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+    & .redirection{
+        position: relative;
+        right: 43%;
+        bottom: 23%;
+        top: -33px;
+        color: black;
+        font-weight: bold;
+    }
+}
+
 img{
     max-width: 100%;
     width: 100%;
@@ -25,29 +44,22 @@ img{
                 width: 100%; 
                 margin-top: 44px;
                 margin-bottom: 20px;
-                 }
-                 .heart{
-                    font-size: 24px;
-                    position: absolute;
-                    right: 41px;
-                    top: 5%;
-                    transform: translateY(-50%);
-                    }  
+                 }      
                     h3{
                         margin-left: 19px;
-                        margin-top: 40px; 
+                        margin-top: 25px; 
                     }
           .card__menu{
-              margin: 0px 10px 0px 20px;
+              margin:  20px 10px;
               background-color: white;
               border-radius: 20px;
-              margin-left: 10px;
+              @include shadow.base-shadow;
               h4{
                   margin: 20px 0px 0px 20px;
                   padding-top: 11px;
               }
               p{
-                  margin: 8px 0px 0px 20px;
+                  margin: 8px 0px -8px 20px;
               }
               span{
                 position: relative;
@@ -56,21 +68,7 @@ img{
                 top: -18px;
                 bottom: 15px;
                 font-weight: bold; 
-              }
-    .commande{
-        color: white;
-        width: 250px;
-        height: 60px;
-        font-size: 18px;
-        padding: 14px 28px;
-        margin-bottom: 40px;
-        border: none;
-        margin-top: 14px;
-        border-radius: 28px;
-        background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9),rgba(255, 121, 218, 0.9));
-        cursor: pointer;
-              }
-            
+              }           
 }
 
           
