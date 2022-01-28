@@ -44,23 +44,39 @@ img{
                 margin-top: 44px;
                 margin-bottom: 20px;
                 font-size: 27px;
-                 }
-                //  .icone{
-                //      position: relative;
-                //      right: 40%;
-                //      top: 60%;
-                //  }
+                     }                      
                 h3{
                         margin-left: 19px;
                         margin-top: 25px; 
                     }
+                    .heart{
+                        & i{
+                            font-size: 24px;
+                            position: absolute;
+                            right: 14%;
+                            top: 62.6px;
+                            transform: translateY(-50%);
+                             } 
+                         .fas{
+                             color: transparent;
+                             background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9),rgba(255, 121, 218, 0.9));
+                             background-clip: text;
+                             -webkit-background-clip: text;
+                             opacity: 0;
+                             transition: all ease-in-out;
+                }
+                             & .fas:hover {
+                                 opacity: 1;
+                             }  
+                    }
+
           .card__menu{
               margin:  20px 10px;
               background-color: white;
               border-radius: 20px;
               @include shadow.base-shadow;
               h4{
-                  margin: 20px 0px 0px 20px;
+                  margin: 0px 0px 0px 20px;
                   padding-top: 11px;
               }
               p{
@@ -74,35 +90,5 @@ img{
                 bottom: 15px;
                 font-weight: bold; 
               }
-              .menu__animation{
-                background-color: #99E2D0;
-                height: 100%;
-                width: 60px;
-                right: 0;
-                display: flex;
-                position: absolute;
-                align-items: center;
-                justify-content: center;
-                transform: scaleX(0);
-                transition: transform 0.3s ease-in-out;
-                transform-origin: 100% 50%;
-              } 
-              .menu__animation i{
-                color: white;
-                font-size: 20px;
-                transform: rotate(0deg);
-                transition: transform 0.3s ease-in-out;
-              }
-              ::before .menu__animation i{
-                  color: white;
-                  font-size: 20px;
-              }          
+              
 }
-
-          
-          
-
-      
-                 
-                         
-        
