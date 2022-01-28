@@ -40,11 +40,16 @@ img{
             padding-right: 21px;
             }
             h2{
-                font-family: "roboto", sans-serif;
-                width: 100%; 
+                font-family: "shrikhand", "cursive"; 
                 margin-top: 44px;
                 margin-bottom: 20px;
+                font-size: 27px;
                  }
+                //  .icone{
+                //      position: relative;
+                //      right: 40%;
+                //      top: 60%;
+                //  }
                 h3{
                         margin-left: 19px;
                         margin-top: 25px; 
@@ -68,7 +73,30 @@ img{
                 top: -18px;
                 bottom: 15px;
                 font-weight: bold; 
-              }           
+              }
+              .menu__animation{
+                background-color: #99E2D0;
+                height: 100%;
+                width: 60px;
+                right: 0;
+                display: flex;
+                position: absolute;
+                align-items: center;
+                justify-content: center;
+                transform: scaleX(0);
+                transition: transform 0.3s ease-in-out;
+                transform-origin: 100% 50%;
+              } 
+              .menu__animation i{
+                color: white;
+                font-size: 20px;
+                transform: rotate(0deg);
+                transition: transform 0.3s ease-in-out;
+              }
+              ::before .menu__animation i{
+                  color: white;
+                  font-size: 20px;
+              }          
 }
 
           

@@ -246,12 +246,18 @@ button {
   font-size: 20px;
   color: white;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  transition: transform 200ms;
-  -webkit-transition: transform 200ms;
-  -moz-transition: transform 200ms;
-  -ms-transition: transform 200ms;
-  -o-transition: transform 200ms;
+  transition-property: transform;
+  transition-duration: 200ms;
+  transform: scale(1);
   box-shadow: 2px 1px 14px -3px #000;
+}
+
+:hover button {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
 }
 
 header {
@@ -296,10 +302,10 @@ img {
 }
 
 h2 {
-  font-family: "roboto", sans-serif;
-  width: 100%;
+  font-family: "shrikhand", "cursive";
   margin-top: 44px;
   margin-bottom: 20px;
+  font-size: 27px;
 }
 
 h3 {
@@ -327,6 +333,29 @@ h3 {
   top: -18px;
   bottom: 15px;
   font-weight: bold;
+}
+.card__menu .menu__animation {
+  background-color: #99E2D0;
+  height: 100%;
+  width: 60px;
+  right: 0;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: 100% 50%;
+}
+.card__menu .menu__animation i {
+  color: white;
+  font-size: 20px;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+}
+.card__menu ::before .menu__animation i {
+  color: white;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
