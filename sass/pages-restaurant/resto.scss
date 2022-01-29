@@ -11,7 +11,7 @@ header{
         position: relative;
         right: 43%;
         bottom: 23%;
-        top: -33px;
+        top: -25px;
         color: black;
         font-weight: bold;
     }
@@ -74,7 +74,7 @@ img{
          .card__category{
             background-color: white;
             border-radius: 15px;
-            margin: 0px 20px;
+            margin: 0px 10px;
 }
               .card__menu{
                 display: flex;
@@ -86,7 +86,10 @@ img{
                 -moz-border-radius: 20px;
                 -ms-border-radius: 20px;
                 -o-border-radius: 20px;
-}  
+                overflow: hidden;
+                @include shadow.base-shadow;
+                margin-bottom: 20px;
+                }  
                 .card-menu__items{
                     padding-top: 10px;
                     padding-bottom: 10px;
@@ -105,7 +108,7 @@ img{
             padding-bottom: 13px;
             padding-right: 10px;
             
-            }
+            }         
             .price__check{
                 background-color: #99E2D0;
                 width: 50px;
@@ -114,7 +117,17 @@ img{
                 -moz-border-radius: 0px 20px 20px 0px;
                 -ms-border-radius: 0px 20px 20px 0px;
                 -o-border-radius: 0px 20px 20px 0px;
+                margin-right: -50px;
+                transition: margin-right 0.5s;
+                -webkit-transition: margin-right 0.5s;
+                -moz-transition: margin-right 0.5s;
+                -ms-transition: margin-right 0.5s;
+                -o-transition: margin-right 0.5s;
 }          
+                :hover .price__check{
+                    margin: 0;
+                }
+  
             .fa-check-circle{
                 margin-top: 50%;
                 margin-left: 30%;

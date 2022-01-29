@@ -30,7 +30,7 @@
      background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9),rgba(255, 121, 218, 0.9));
      cursor: pointer;
      transition: transform 200ms;
-          @include shadow.base-shadow;
+         @include shadow.base-shadow; 
      -webkit-transition: transform 200ms;
      -moz-transition: transform 200ms;
      -ms-transition: transform 200ms;

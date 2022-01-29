@@ -271,7 +271,7 @@ header .redirection {
   position: relative;
   right: 43%;
   bottom: 23%;
-  top: -33px;
+  top: -25px;
   color: black;
   font-weight: bold;
 }
@@ -338,7 +338,7 @@ h2 {
 .card__category {
   background-color: white;
   border-radius: 15px;
-  margin: 0px 20px;
+  margin: 0px 10px;
 }
 
 .card__menu {
@@ -351,6 +351,9 @@ h2 {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 2px 1px 14px -3px #000;
+  margin-bottom: 20px;
 }
 
 .card-menu__items {
@@ -383,6 +386,16 @@ p {
   -moz-border-radius: 0px 20px 20px 0px;
   -ms-border-radius: 0px 20px 20px 0px;
   -o-border-radius: 0px 20px 20px 0px;
+  margin-right: -50px;
+  transition: margin-right 0.5s;
+  -webkit-transition: margin-right 0.5s;
+  -moz-transition: margin-right 0.5s;
+  -ms-transition: margin-right 0.5s;
+  -o-transition: margin-right 0.5s;
+}
+
+:hover .price__check {
+  margin: 0;
 }
 
 .fa-check-circle {
