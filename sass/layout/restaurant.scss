@@ -73,3 +73,13 @@
                  opacity: 1;
              }                      
 }
+@media  screen and (min-width:769px) {
+.restaurant .restaurant__carte{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+}
+.restaurant a{
+    width: 50%;
+}
+ }

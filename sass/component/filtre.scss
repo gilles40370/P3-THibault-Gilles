@@ -12,11 +12,11 @@
         flex-direction: column;
         padding: 0px 20px;
         gap: 14px;
-        
     }
+    
     & li{
         position: relative;
-        &::before{
+            &::before{
             content: counter(filtre);
             counter-increment: filtre;
             color: white;
@@ -36,7 +36,9 @@
         border-radius: 14px;
         margin-bottom: 15px;
         @include shadow.base-shadow;
-        cursor: pointer; 
+        cursor: pointer;
+        width: 100%;
+        margin-left: 0px; 
         &:hover{
             @include hover.hover;
         }
@@ -45,3 +47,14 @@
         }
     }
 }
+@media screen and(min-width:769px)  {
+    .filtre ol{
+        display: flex;
+        flex-direction: row;
+    }
+    .filtre li{
+        width: 40%;
+        margin-left: 5px;
+         font-size: 15px;
+    }
+   }
