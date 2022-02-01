@@ -59,9 +59,15 @@ img{
                              -webkit-background-clip: text;
                              opacity: 0;
                              transition: all ease-in-out;
+                             transition-property: background-color;
+                             transition-duration: 3s;
+                          
+                            
                 }
                              & .fas:hover {
                                  opacity: 1;
+                                 transition-property: background-color;
+                                 transition-duration: 3s;
                              }  
                     }
 
@@ -79,8 +85,6 @@ img{
               .card__menu{
                 display: flex;
                 padding-top:0px;
-                padding-bottom: 0px;
-                padding-left: 0px;
                 border-radius: 20px;
                 -webkit-border-radius: 20px;
                 -moz-border-radius: 20px;
@@ -90,11 +94,16 @@ img{
                 @include shadow.base-shadow;
                 margin-bottom: 20px;
                 }  
+                .card__category:hover .price__check{
+                    margin-right: 0px;
+                }
+                
                 .card-menu__items{
                     padding-top: 10px;
                     padding-bottom: 10px;
                     padding-left: 14px;
                 }
+             
             h4{
             margin: 0px;
             } 
@@ -108,7 +117,8 @@ img{
             padding-bottom: 13px;
             padding-right: 10px;
             
-            }         
+            }
+                  
             .price__check{
                 background-color: #99E2D0;
                 width: 50px;
@@ -123,14 +133,16 @@ img{
                 -moz-transition: margin-right 0.5s;
                 -ms-transition: margin-right 0.5s;
                 -o-transition: margin-right 0.5s;
-}          
-                :hover .price__check{
-                    margin: 0;
-                }
+        
+                }          
+               
   
             .fa-check-circle{
                 margin-top: 50%;
                 margin-left: 30%;
             }
-            
+.button{
+    display: flex;
+    justify-content: center;
+}          
             
