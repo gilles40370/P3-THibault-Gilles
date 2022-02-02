@@ -55,12 +55,13 @@ header {
   background-color: #f6f6f6;
 }
 .explore h2 {
-  font-size: 33px;
+  font-size: 30px;
   padding-top: 30px;
   margin-top: 0px;
+  font-family: "roboto", cursive;
 }
 .explore p {
-  font-size: 21px;
+  font-size: 20px;
   color: gray;
   padding: 0 10px;
   margin-bottom: 21px;
@@ -69,7 +70,7 @@ header {
   color: white;
   width: 250px;
   height: 60px;
-  font-size: 18px;
+  font-size: 17px;
   padding: 14px 28px;
   margin-bottom: 40px;
   border: none;
@@ -337,29 +338,29 @@ h2 {
   margin-top: 44px;
   margin-bottom: 20px;
   font-size: 27px;
+  margin-left: -11px;
 }
 
+.heart {
+  cursor: pointer;
+}
 .heart i {
-  font-size: 24px;
+  font-size: 28px;
   position: absolute;
-  right: 14%;
-  top: 62.6px;
-  transform: translateY(-50%);
+  right: 24px;
+  top: 20px;
 }
 .heart .fas {
   color: transparent;
-  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-image: linear-gradient(0deg, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition: all ease-in-out;
-  transition-property: background-color;
-  transition-duration: 3s;
+  transition-duration: 0.3s;
 }
 .heart .fas:hover {
   opacity: 1;
-  transition-property: background-color;
-  transition-duration: 3s;
+  transform: scale(1.1);
 }
 
 .card-main {
@@ -368,6 +369,9 @@ h2 {
 
 .card {
   background-color: #f7f7f7;
+}
+.card h3 {
+  margin-left: 10px;
 }
 
 .card__category {
@@ -389,8 +393,12 @@ h2 {
   margin-bottom: 20px;
 }
 
-.card__category:hover .price__check {
+.card__category :hover .price__check {
   margin-right: 0px;
+}
+.card__category :hover .fa-check-circle {
+  animation: quartdetour 1s;
+  -webkit-animation: quartdetour 1s;
 }
 
 .card-menu__items {
@@ -432,8 +440,10 @@ p {
 }
 
 .fa-check-circle {
-  margin-top: 50%;
-  margin-left: 30%;
+  margin-top: 42%;
+  margin-left: 24%;
+  color: white;
+  font-size: 22px;
 }
 
 .button {
@@ -441,15 +451,39 @@ p {
   justify-content: center;
 }
 
+@keyframes quartdetour {
+  0% {
+    transform: rotate(-270deg);
+    -webkit-transform: rotate(-270deg);
+    -moz-transform: rotate(-270deg);
+    -ms-transform: rotate(-270deg);
+    -o-transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+  }
+}
 .body {
-  margin: 0;
-  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 2;
   font-family: sans-serif;
   font-size: 40px;
   color: #9356dc;
   text-align: center;
   font-weight: bold;
-  margin-top: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: disparition 5s;
+  -webkit-animation: disparition 5s 3s forwards;
+  transform-origin: top;
 }
 
 .loader {
@@ -510,6 +544,14 @@ p {
     -moz-transform: rotate(-360deg);
     -ms-transform: rotate(-360deg);
     -o-transform: rotate(-360deg);
+  }
+}
+@keyframes disparition {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
   }
 }
 
