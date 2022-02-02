@@ -23,7 +23,7 @@ header {
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
   padding: 1px;
   position: relative;
-  box-shadow: 2px 1px 14px -3px #000;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 
 .city {
@@ -79,7 +79,7 @@ header {
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   cursor: pointer;
   transition: transform 200ms;
-  box-shadow: 2px 1px 14px -3px #000;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
   -webkit-transition: transform 200ms;
   -moz-transition: transform 200ms;
   -ms-transition: transform 200ms;
@@ -110,7 +110,7 @@ header {
   padding: 25px 28px;
   border-radius: 14px;
   margin-bottom: 15px;
-  box-shadow: 2px 1px 14px -3px #000;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
   cursor: pointer;
   width: 100%;
   margin-left: 0px;
@@ -218,6 +218,7 @@ header {
   -webkit-background-clip: text;
   opacity: 0;
   transition: all ease-in-out;
+  transition-duration: 0.9s;
 }
 .restaurant .fas:hover {
   opacity: 1;
@@ -281,7 +282,7 @@ button {
   transition-property: transform;
   transition-duration: 200ms;
   transform: scale(1);
-  box-shadow: 2px 1px 14px -3px #000;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 
 :hover button {
@@ -347,8 +348,8 @@ h2 {
 .heart i {
   font-size: 28px;
   position: absolute;
-  right: 24px;
-  top: 20px;
+  right: 14%;
+  top: 48%;
 }
 .heart .fas {
   color: transparent;
@@ -356,7 +357,7 @@ h2 {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition-duration: 0.3s;
+  transition-duration: 0.9s;
 }
 .heart .fas:hover {
   opacity: 1;
@@ -372,12 +373,25 @@ h2 {
 }
 .card h3 {
   margin-left: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+}
+.card h3::after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 0px;
+  height: 0.25rem;
+  width: 3.25rem;
+  background-color: #99E2D0;
 }
 
 .card__category {
   background-color: white;
   border-radius: 15px;
-  margin: 0px 10px;
+  margin: 10px 10px;
 }
 
 .card__menu {
@@ -389,7 +403,7 @@ h2 {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   overflow: hidden;
-  box-shadow: 2px 1px 14px -3px #000;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
   margin-bottom: 20px;
 }
 
@@ -404,16 +418,25 @@ h2 {
 .card-menu__items {
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 14px;
+  padding-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 h4 {
   margin: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 p {
   margin: 0px;
   padding-top: 6px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .price {

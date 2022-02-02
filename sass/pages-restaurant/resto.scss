@@ -56,12 +56,25 @@ img{
        background-color: #f7f7f7; 
     & h3{
         margin-left: 10px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 400;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 26px;
+            left: 0px;
+            height: 0.25rem;
+            width: 3.25rem;
+            background-color: #99E2D0;
+        }
     }
     }
          .card__category{
             background-color: white;
             border-radius: 15px;
-            margin: 0px 10px;
+            margin: 10px 10px;
 }
               .card__menu{
                 display: flex;
@@ -88,15 +101,24 @@ img{
                 .card-menu__items{
                     padding-top: 10px;
                     padding-bottom: 10px;
-                    padding-left: 14px;
+                    padding-left: 10px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
              
             h4{
             margin: 0px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
             } 
             p{
             margin: 0px;
             padding-top: 6px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
             }
             .price{
             margin-left: auto; 
