@@ -7,4 +7,7 @@ header{
     padding: 1px;
     position: relative;
     @include shadow.base-shadow;
+    & h1{
+        font-size: 37px;
+    }
 }

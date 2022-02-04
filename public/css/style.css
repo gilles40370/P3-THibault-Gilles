@@ -25,6 +25,9 @@ header {
   position: relative;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
+header h1 {
+  font-size: 37px;
+}
 
 .city {
   background-color: #f3f3f3;
@@ -43,6 +46,7 @@ header {
   padding-right: 83px;
   margin-top: 10px;
   margin-bottom: 11px;
+  padding-top: 7px;
 }
 .city .fa-map-marker-alt {
   font-size: 18px;
@@ -58,10 +62,11 @@ header {
   background-color: #f6f6f6;
 }
 .explore h2 {
-  font-size: 20px;
-  padding-top: 30px;
+  font-size: 33px;
+  padding-top: 30px 15px 10px 15px;
   margin-top: 0px;
   font-family: "roboto", cursive;
+  text-align: center;
 }
 .explore p {
   font-size: 20px;
@@ -138,24 +143,38 @@ header {
 .filtre li:hover i.fas {
   color: #9356DC;
 }
+
 @media screen and (min-width: 769px) {
-  .filtre .filtre ol {
+  .filtre ol {
     display: flex;
     flex-direction: row;
   }
-  .filtre .filtre li {
-    width: 40%;
+
+  .filtre ol {
+    margin-left: 0px;
+    padding-left: 21px;
+    padding-right: 6px;
+    padding-top: 25px;
+    margin-top: 15px;
+  }
+
+  .filtre i.fas {
+    margin-right: 7px;
+    margin-left: 0px;
+  }
+
+  .filtre li {
     margin-left: 5px;
+    padding-right: 0px;
     font-size: 15px;
   }
 }
-
 .restaurant {
   background-color: #f6f6f6;
 }
 .restaurant h2 {
   margin-bottom: 0px;
-  padding: 24px 0px 24px 18px;
+  padding: 24px 0px 24px 29px;
 }
 .restaurant .restaurant__carte {
   gap: 24px;
@@ -262,6 +281,9 @@ footer a {
 footer a li {
   list-style-type: none;
   padding-bottom: 10px;
+}
+footer a .fas {
+  padding-right: 10px;
 }
 
 @media screen and (min-width: 769px) {

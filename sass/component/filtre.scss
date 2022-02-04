@@ -49,16 +49,29 @@
             color: #9356DC;
         }
     }
-}
-@media screen and(min-width:769px)  {
+ }
+ }
+ @media screen and (min-width:769px)  {
     .filtre ol{
         display: flex;
         flex-direction: row;
     }
-    .filtre li{
-        width: 40%;
-        margin-left: 5px;
-         font-size: 15px;
+    .filtre ol{
+        margin-left: 0px;
+        padding-left: 21px;
+        padding-right: 6px;
+        padding-top: 25px;
+        margin-top: 15px;
     }
-   }
- }
+    .filtre i.fas{
+        margin-right: 7px;
+        margin-left: 0px;
+    }
+    .filtre li{
+        margin-left: 5px;
+        padding-right: 0px;
+        font-size: 15px;
+     }
+    }
+ 
+  
