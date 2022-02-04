@@ -13,6 +13,9 @@
         padding: 0px 20px;
         gap: 14px;
     }
+    & i.fas{
+        margin-right: 15px;
+    }
     
     & li{
         position: relative;
@@ -41,9 +44,9 @@
         margin-left: 0px; 
         &:hover{
             @include hover.hover;
-        }
+            background: #f2eafb;
         & i.fas{
-            margin-right: 15px;
+            color: #9356DC;
         }
     }
 }
@@ -58,3 +61,4 @@
          font-size: 15px;
     }
    }
+ }

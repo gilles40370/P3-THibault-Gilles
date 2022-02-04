@@ -36,15 +36,18 @@ header {
   gap: 10px;
 }
 .city h2 {
-  font-size: 20px;
-  color: darkgray;
+  font-family: "roboto", "cursive";
+  font-size: 18px;
+  font-weight: bold;
+  color: #7c7c7c;
   padding-right: 83px;
   margin-top: 10px;
   margin-bottom: 11px;
 }
 .city .fa-map-marker-alt {
-  font-size: 20px;
+  font-size: 18px;
   padding-left: 108px;
+  padding-right: 15px;
   padding-bottom: 2px;
 }
 
@@ -55,7 +58,7 @@ header {
   background-color: #f6f6f6;
 }
 .explore h2 {
-  font-size: 30px;
+  font-size: 20px;
   padding-top: 30px;
   margin-top: 0px;
   font-family: "roboto", cursive;
@@ -76,18 +79,13 @@ header {
   border: none;
   margin-top: 14px;
   border-radius: 28px;
-  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(225, 121, 218, 0.9));
   cursor: pointer;
-  transition: transform 200ms;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
-  -webkit-transition: transform 200ms;
-  -moz-transition: transform 200ms;
-  -ms-transition: transform 200ms;
-  -o-transition: transform 200ms;
 }
 .explore button:hover {
-  opacity: 0.9;
-  transform: scale(1.02);
+  opacity: 0.8;
+  box-shadow: 0px 0px 10px black;
 }
 
 .filtre {
@@ -102,6 +100,9 @@ header {
   flex-direction: column;
   padding: 0px 20px;
   gap: 14px;
+}
+.filtre i.fas {
+  margin-right: 15px;
 }
 .filtre li {
   position: relative;
@@ -130,24 +131,25 @@ header {
   left: -14px;
 }
 .filtre li:hover {
-  transform: scale(1.02);
+  opacity: 0.8;
+  box-shadow: 0px 0px 10px black;
+  background: #f2eafb;
 }
-.filtre li i.fas {
-  margin-right: 15px;
+.filtre li:hover i.fas {
+  color: #9356DC;
 }
-
 @media screen and (min-width: 769px) {
-  .filtre ol {
+  .filtre .filtre ol {
     display: flex;
     flex-direction: row;
   }
-
-  .filtre li {
+  .filtre .filtre li {
     width: 40%;
     margin-left: 5px;
     font-size: 15px;
   }
 }
+
 .restaurant {
   background-color: #f6f6f6;
 }
@@ -247,8 +249,10 @@ footer h3 {
   margin-bottom: 0px;
   margin-left: -7px;
   padding-top: 10px;
+  font-weight: lighter;
 }
 footer ul {
+  margin-left: -6px;
   padding-left: 0px;
 }
 footer a {
@@ -266,33 +270,6 @@ footer a li {
     justify-content: space-around;
   }
 }
-button {
-  margin: 40px 20%;
-}
-
-button {
-  width: 250px;
-  height: 60px;
-  border-radius: 30px;
-  border: none;
-  cursor: pointer;
-  font-size: 20px;
-  color: white;
-  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  transition-property: transform;
-  transition-duration: 200ms;
-  transform: scale(1);
-  box-shadow: 2px 1px 8px -3px #7e7e7e;
-}
-
-:hover button {
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-}
-
 header {
   height: 61px;
 }
@@ -372,7 +349,7 @@ h2 {
   background-color: #f7f7f7;
 }
 .card h3 {
-  margin-left: 10px;
+  margin-left: 15px;
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 400;
@@ -383,8 +360,8 @@ h2 {
   position: absolute;
   top: 26px;
   left: 0px;
-  height: 0.25rem;
-  width: 3.25rem;
+  height: 3px;
+  width: 48px;
   background-color: #99E2D0;
 }
 
@@ -470,8 +447,24 @@ p {
 }
 
 .button {
-  display: flex;
-  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.button button {
+  color: white;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(225, 121, 218, 0.9));
+  width: 200px;
+  height: 60px;
+  position: relative;
+  left: 26%;
+  right: 26%;
+  border-radius: 28px;
+  border: none;
+  box-shadow: 9px 12px 15px -10px #7e7e7e;
+}
+.button button:hover {
+  opacity: 0.8;
+  box-shadow: 0px 0px 10px black;
 }
 
 @keyframes quartdetour {
