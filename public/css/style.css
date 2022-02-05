@@ -471,6 +471,7 @@ p {
 .button {
   padding-top: 50px;
   padding-bottom: 50px;
+  background-color: #f7f7f7;
 }
 .button button {
   color: white;
@@ -503,6 +504,52 @@ p {
     -moz-transform: rotate(0);
     -ms-transform: rotate(0);
     -o-transform: rotate(0);
+  }
+}
+@media screen and (min-width: 769px) {
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .entree {
+    width: 50%;
+  }
+
+  .plats {
+    width: 50%;
+  }
+
+  .dessert {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .card__category {
+    width: 95%;
+  }
+
+  .button {
+    display: flex;
+    width: 100%;
+  }
+
+  .button button {
+    left: 39%;
+    right: 39%;
+  }
+
+  .heart i {
+    right: 8%;
+  }
+
+  header .redirection {
+    right: 46%;
+    top: -30px;
+  }
+
+  .redirection {
+    font-size: 20px;
   }
 }
 .body {
