@@ -9,7 +9,7 @@ header{
     }
     & .redirection{
         position: relative;
-        right: 43%;
+        right: 46%;
         bottom: 23%;
         top: -25px;
         color: black;
@@ -35,15 +35,15 @@ img{
     margin-bottom: -69px; 
         }
         .choice__title{
-            padding-left: 21px;
-            padding-right: 21px;
+            padding-left: 18px;
+            padding-right: 11px;
             }
             h2{
                 font-family: "shrikhand", "cursive"; 
                 margin-top: 44px;
                 margin-bottom: 20px;
                 font-size: 27px;
-                margin-left: -11px;
+                margin-left: 0px;
                      }                      
                     .heart{
                   @include animationheart.heart;   
@@ -87,6 +87,8 @@ img{
                 overflow: hidden;
                 @include shadow.base-shadow;
                 margin-bottom: 20px;
+                animation: apparition 1s ease-in-out both;
+                -webkit-animation: apparition 1s ease-in-out both;
                 }  
                 .card__category
                 :hover { 
@@ -105,7 +107,8 @@ img{
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
-                }
+                    
+}
              
             h4{
             margin: 0px;
@@ -163,8 +166,8 @@ img{
         width: 200px;
         height: 60px;
         position: relative;
-        left: 26%;
-        right: 26%;
+        left: 36%;
+        right: 36%;
         border-radius: 28px;
         border: none;
         box-shadow: 9px 12px 15px -10px #7e7e7e;
@@ -190,19 +193,28 @@ img{
  }
  }  
 @media screen and(min-width: 769px){
+    .choice__title > h2{
+        margin-left: 0px;
+    }
     .card{
         display: flex;
         flex-wrap: wrap;
     }
     .entree{
         width: 50%;
+        padding-right: 5px;
+        padding-left: 5px;
     }
     .plats{
         width: 50%;
+        padding-right: 5px;
+        padding-left: 5px;
     }
     .dessert{
         width: 50%;
         margin-left: 25%;
+        padding-right: 5px;
+        padding-left: 5px;
     }
     .card__category{
         width: 95%;
@@ -216,13 +228,42 @@ img{
         right: 39%;
     }
     .heart i{
-        right: 8%;
+        right: 4%;
     }
     header .redirection{
-        right: 46%;
+        right: 48%;
         top: -30px;
     }
     .redirection{
         font-size: 20px;
     }
+}
+@media screen and (min-width:992px){
+    .button button{
+        left: 41%;
+    }
+}
+@media screen and (min-width:1155px){
+    .button button{
+        left: 43%;
+    }
+}
+
+@keyframes apparition{
+    0%{
+        opacity: 0;
+        transform: translateY(50%);
+        -webkit-transform: translateY(50%);
+        -moz-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        -o-transform: translateY(50%);
+}
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
 }
