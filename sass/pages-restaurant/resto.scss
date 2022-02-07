@@ -75,6 +75,8 @@ img{
             background-color: white;
             border-radius: 15px;
             margin: 10px 10px;
+            animation: apparition 1s ease-in-out both;
+            -webkit-animation: apparition 1s ease-in-out both;
 }
               .card__menu{
                 display: flex;
@@ -87,8 +89,7 @@ img{
                 overflow: hidden;
                 @include shadow.base-shadow;
                 margin-bottom: 20px;
-                animation: apparition 1s ease-in-out both;
-                -webkit-animation: apparition 1s ease-in-out both;
+                
                 }  
                 .card__category
                 :hover { 
