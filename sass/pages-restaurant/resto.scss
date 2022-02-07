@@ -161,14 +161,14 @@ img{
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
     button{
         color: white;
         background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9),rgba(225, 121, 218, 0.9));
         width: 200px;
         height: 60px;
         position: relative;
-        left: 36%;
-        right: 36%;
         border-radius: 28px;
         border: none;
         box-shadow: 9px 12px 15px -10px #7e7e7e;
@@ -202,20 +202,16 @@ img{
         flex-wrap: wrap;
     }
     .entree{
-        width: 50%;
-        padding-right: 5px;
-        padding-left: 5px;
+        width: 45%;
+        margin-left: 20px;
     }
     .plats{
-        width: 50%;
-        padding-right: 5px;
-        padding-left: 5px;
+        width: 45%;
+        margin-left: 20px;
     }
     .dessert{
-        width: 50%;
-        margin-left: 25%;
-        padding-right: 5px;
-        padding-left: 5px;
+        width: 45%;
+        margin-left: 28%;
     }
     .card__category{
         width: 95%;
@@ -223,10 +219,6 @@ img{
     .button{
         display: flex;
         width: 100%;
-    }
-    .button button{
-        left: 39%;
-        right: 39%;
     }
     .heart i{
         right: 4%;
@@ -239,17 +231,23 @@ img{
         font-size: 20px;
     }
 }
-@media screen and (min-width:992px){
-    .button button{
-        left: 41%;
+@media screen and(min-width: 992px){ 
+     .entree{
+    width: 30%;
+    margin-right: 20px;
+   margin-left: 20px;
     }
-}
-@media screen and (min-width:1155px){
-    .button button{
-        left: 43%;
+    .plats{
+        width: 30%;
+        margin-right: 20px;
+       margin-left: 20px;
     }
-}
-
+    .dessert{
+       width: 30%;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+  }
 @keyframes apparition{
     0%{
         opacity: 0;
